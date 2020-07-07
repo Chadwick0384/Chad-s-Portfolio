@@ -1,0 +1,369 @@
+body {
+  background: #fff;
+  color: #555;
+  font-size: 16px;
+  min-width: 300px;
+  font-family: Georgia, Times, Serif;
+  font: 13px sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body, cite {
+  font-family: Georgia, Times, serif;
+}
+
+header {
+  text-align: left;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+  font: inherit;
+}
+
+
+header nav, #hero div, #info div, #projects, footer {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+nav {
+  font-family: museo-sans, Helvetica, Arial, sans-serif;
+}
+
+nav section {
+  display: block;
+}
+
+header #home {
+  border-bottom: none;
+  color: #555;
+  float: left;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header #home, header li a {
+  padding: 50px 20px 20px;
+  color: #555;
+  display: block;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header #home span {
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+header ul {
+  float: right;
+  padding-bottom: 0;
+}
+
+nav li, nav ul {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+dl, ol, p, ul {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+li{
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+header li:first-child {
+  border-left: 1px solid #000000;
+}
+
+header li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: auto;
+}
+
+nav li, nav ul {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+header #home, header li a {
+  padding: 50px 20px 20px;
+  border-bottom: none;
+  border-right: 1px solid #000000;
+  color: #555;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+header li:last-child a {
+  border: none;
+}
+
+.clearfix::after, dl::after, footer::after, nav::after, section::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+
+/*Info*/
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+#hero {
+  background-image: url(https://chadswebsite.s3.us-east-2.amazonaws.com/coffee3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#hero #chad {
+  position: absolute;
+  z-index: 1;
+}
+
+#hero div #info, #projects, footer, header nav {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+#hero div {
+  min-height: 900px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+#hero h1 {
+    font-size: 40px;
+    padding: 150px 0 10px;
+    color: #FFF;
+}
+
+#hero h1, #hero p {
+  width: 35%;
+  margin-left: 30px;
+  background-color: transparent;
+  display: block;
+}
+
+#hero p {
+  color: #FFF;
+  padding: 0px;
+  font-size: 25px;
+}
+
+
+/*Quote*/
+section{
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+#quote {
+  background: #000;
+  text-align: center;
+}
+
+#quote blockquote {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 100px 15px 80px;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  border: 0;
+  font: inherit;
+}
+
+#quote blockquote cite {
+  margin-top: 50px;
+  display: block;
+  font-style: italic;
+}
+
+#quote blockquote cite::before {
+  content: '-';
+}
+
+.clearfix::after, dl::after, footer::after, nav::after, section::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+
+/*Info*/
+#info {
+  padding: 60px 0;
+  background: #2d2c2c;
+}
+
+section {
+  display: block;
+  margin: 0;
+  border: 0;
+}
+
+
+#info img {
+  padding-top: 40px;
+	border-radius: 50%;
+  padding-right: 10px;
+}
+
+
+.bio {
+  float: left;
+  width: 50%;
+}
+
+#info h1 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: museo-sans, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#info p {
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/*Projects*/
+#projects {
+  background-color:#2d2c2c;
+  padding: 40px 2%;
+  font-family: museo-sans, Helvetica, sans-serif;
+}
+
+section {
+  display: block;
+  margin: 0;
+  border: 0;
+  font: inherit;
+}
+
+#projects ul {
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  line-height: 23px;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+#projects li:nth-child(3n+1) {
+  clear: left;
+}
+
+#projects li {
+  width: 40%;
+  float: left;
+  margin: 2%;
+  background: #fff;
+}
+
+#projects a {
+  border: 1px solid #000000;
+  color: #555;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+#projects img {
+  width: 100%;
+}
+
+img {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+#projects h4 {
+  margin: 10px 15px 0;
+}
+
+h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: museo-sans, Helvetica, sans-serif;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+#projects p {
+  font-size: 14px;
+  margin: 0 15px 0;
+}
+
+p {
+  line-height: 23px;
+  padding-bottom: 15px;
+}
