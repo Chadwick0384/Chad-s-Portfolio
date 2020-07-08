@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap');
+
+
 body {
   background: #06313F;
   color: rgb(255, 255, 255);
@@ -9,40 +12,42 @@ body {
   border: 0;
 }
 
-.nav {
-  display: flexbox;
-}
-
 .nav_list {
-  margin: 10px;
-  padding: 0;
+  padding-top: 7px;
   list-style: none;
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: end;
-  letter-spacing: 2px;
+  justify-content: space-between;
+  letter-spacing: 5px;
+  display: inline-flex;
+  padding-left: 75px;
 }
 
 .nav_list-item {
   color: #FFF;
-  margin: 3px;
+  margin: 5px;
+  word-spacing: normal;
 }
 
 .nav_link {
-  padding: 0rem;
+  padding-left: 20px;
   color: #FFF;
-  font-size: 15px;
+  font-size: 20px;
+  word-spacing: 5px;
+  font-family: 'Bangers', cursive;
 }
 
 
 
 .bio {
-  font-size: 18px;
+  padding-top: 5px;
+  display: inline-flex;
+  padding-left: 50px;
+  font-size: 25px;
   color: #fff;
+  font-family: 'Bangers', cursive;
 }
 
 
-/*Info*/
+/*Main Page Info*/
 section {
   display: block;
   margin: 0;
@@ -61,6 +66,7 @@ section {
 #hero #chad {
   position: absolute;
   z-index: 1;
+  
 }
 
 #hero div #info, #projects, footer, header nav {
@@ -79,11 +85,13 @@ section {
     font-size: 30px;
     padding: 50px 0 10px;
     color: rgb(7, 0, 0);
+    font-family: 'Acme', sans-serif;
 }
 
 #hero h1, #hero p {
   width: 40%;
   margin-left: 30px;
+  font-family: 'Acme', sans-serif;
 }
 
 #hero p {
@@ -93,7 +101,7 @@ section {
 }
 
 
-/*Quote*/
+/*Quote on main page*/
 section{
   display: block;
   padding: 0;
@@ -109,7 +117,7 @@ section{
 #quote blockquote {
   font-size: 20px;
   line-height: 20px;
-  padding: 100px 15px 80px;
+  padding: 30px 15px 80px;
   max-width: 650px;
   margin: 0 auto;
   color: #fff;
@@ -144,9 +152,9 @@ blockquote {
 }
 
 
-/*Info*/
+/*Info About Me*/
 #info {
-  padding: 60px 0;
+  padding: 70px 0;
   background: #2d2c2c;
 }
 
@@ -158,30 +166,28 @@ section {
 
 
 #info img {
-  padding-top: 40px;
-	border-radius: 50%;
+  border-radius: 50%;
+  float: inline-start;
   padding-right: 10px;
 }
 
 
-.bio {
-  float: left;
-  width: 50%;
+.info-bio {
+  width: 100%;
+  display: flexbox;
 }
 
 #info h1 {
   color: #fff;
   padding-bottom: 20px;
+  font-family: 'Bangers', cursive;
 }
 
-h1 {
-  font-size: 24px;
-  font-family: museo-sans, Helvetica, sans-serif;
-  font-weight: 700;
-}
 
 #info p {
   color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
 }
 
 p {
