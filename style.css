@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap');
 
 
+
+
 body {
   background: #06313F;
   color: rgb(255, 255, 255);
@@ -35,16 +37,18 @@ body {
   font-family: 'Bangers', cursive;
 }
 
-
-
 .bio {
   padding-top: 5px;
   display: inline-flex;
   padding-left: 50px;
-  font-size: 25px;
+  font-size: 30px;
   color: #fff;
   font-family: 'Bangers', cursive;
 }
+
+
+
+
 
 
 /*Main Page Info*/
@@ -57,16 +61,16 @@ section {
 }
 
 #hero {
-  background-image: url(https://chadswebsite.s3.us-east-2.amazonaws.com/Coding.jpg);
+  background-image: url(https://chadswebsite.s3.us-east-2.amazonaws.com/Digital+Marketing+coding+marketing+peter+henderson+gif+animation+vecto.gif);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: top;
+  max-width: 100%;
+  height: auto;
 }
 
 #hero #chad {
   position: absolute;
   z-index: 1;
-  
 }
 
 #hero div #info, #projects, footer, header nav {
@@ -74,7 +78,7 @@ section {
 }
 
 #hero div {
-  min-height: 1200px;
+  min-height: 600px;
   padding: 0;
   border: 0;
   font: inherit;
@@ -89,8 +93,7 @@ section {
 }
 
 #hero h1, #hero p {
-  width: 40%;
-  margin-left: 30px;
+  margin-left: 60px;
   font-family: 'Acme', sans-serif;
 }
 
@@ -99,6 +102,9 @@ section {
   font-size: 20px;
   display: flex;
 }
+
+
+
 
 
 /*Quote on main page*/
@@ -152,35 +158,18 @@ blockquote {
 }
 
 
+
+
+
 /*Info About Me*/
-#info {
-  padding: 70px 0;
+.biography {
   background: #2d2c2c;
 }
 
-section {
-  display: block;
-  margin: 0;
-  border: 0;
-}
 
-
-#info img {
-  border-radius: 50%;
-  float: inline-start;
-  padding-right: 10px;
-}
-
-
-.info-bio {
-  width: 100%;
-  display: flexbox;
-}
-
-#info h1 {
-  color: #fff;
-  padding-bottom: 20px;
-  font-family: 'Bangers', cursive;
+.info img {
+	display: block;
+  margin: 0 auto;
 }
 
 
@@ -188,6 +177,7 @@ section {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   padding-top: 20px;
+  display: inline-flex;
 }
 
 p {
@@ -196,13 +186,19 @@ p {
   padding-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  letter-spacing: 1px;
 }
+
+
+
+
 
 
 /*Projects*/
 #projects {
-  background-color:#2d2c2c;
-  padding: 40px 2%;
+  background-color:lightslategray;;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   font-family: museo-sans, Helvetica, sans-serif;
 }
 
@@ -227,12 +223,9 @@ ul {
   font: inherit;
 }
 
-#projects li:nth-child(3n+1) {
-  clear: left;
-}
 
 #projects li {
-  width: 40%;
+  width: 25%;
   float: left;
   margin: 2%;
   background: #fff;
@@ -240,7 +233,7 @@ ul {
 
 #projects a {
   border: 1px solid #000000;
-  color: #555;
+  color: lightslategray;
   display: block;
 }
 
@@ -272,14 +265,27 @@ h4 {
   padding: 0;
   border: 0;
   font: inherit;
+  text-align: center;
+  display: flex;
 }
 
 #projects p {
-  font-size: 14px;
+  font-size: 10px;
   margin: 0 15px 0;
+  text-align: center;
 }
 
 p {
   line-height: 23px;
   padding-bottom: 15px;
+  text-align: center;
 }
+
+
+@media (max-width: 768px) {
+	body {
+		height: 15vh;
+	}
+
+}
+
