@@ -1,49 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap');
 
-
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background: #06313F;
-  color: rgb(255, 255, 255);
+  background: radial-gradient(#501402, #270a02);
+  color: #fff;
   font-size: 16px;
   font-family: Georgia, Times, Serif;
   font: 13px sans-serif;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  width: 100%;
 }
 
+.nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #000000;
+  min-height: 7vh;
+} 
+
+
+
 .nav_list {
-  padding-top: 7px;
   list-style: none;
   justify-content: space-between;
-  letter-spacing: 5px;
-  display: inline-flex;
-  padding-left: 75px;
+  display: flex;
+  letter-spacing: 3px;
+  padding-left: 15px;
+  padding-right: 20px;
 }
 
 .nav_list-item {
   color: #FFF;
   margin: 5px;
   word-spacing: normal;
+  padding-top: 9px;
 }
 
 .nav_link {
-  padding-left: 20px;
   color: #FFF;
   font-size: 20px;
   word-spacing: 5px;
   font-family: 'Bangers', cursive;
+  padding-left: 6px;
+  
 }
 
 .bio {
-  padding-top: 5px;
-  display: inline-flex;
-  padding-left: 50px;
-  font-size: 30px;
+  padding-top: 13px;
+  padding-left: 20px;
+  font-size: 22px;
   color: #fff;
   font-family: 'Bangers', cursive;
+  align-content: center;
 }
 
 
@@ -53,141 +66,61 @@ body {
 
 /*Main Page Info*/
 section {
-  display: block;
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
 }
 
-#hero {
-  background-image: url(https://chadswebsite.s3.us-east-2.amazonaws.com/Digital+Marketing+coding+marketing+peter+henderson+gif+animation+vecto.gif);
-  background-repeat: no-repeat;
-  background-position: top;
-  max-width: 100%;
-  height: auto;
+.grid-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  grid-template-rows: 10fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  min-height: 93vh;
 }
 
-#hero #chad {
-  position: absolute;
-  z-index: 1;
-}
-
-#hero div #info, #projects, footer, header nav {
-  margin: 0 auto;
-}
-
-#hero div {
-  min-height: 600px;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  display: block;
-}
-
-#hero h1 {
-    font-size: 30px;
-    padding: 50px 0 10px;
-    color: rgb(7, 0, 0);
-    font-family: 'Acme', sans-serif;
-}
-
-#hero h1, #hero p {
-  margin-left: 60px;
-  font-family: 'Acme', sans-serif;
+.grid {
+  margin: auto;
 }
 
 #hero p {
-  color: rgb(5, 0, 0);
-  font-size: 20px;
-  display: flex;
+  font-size: 22px;
+  word-spacing: 3px;
+  font-weight: bold;
+  letter-spacing: 0rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin-right: 30px;
 }
 
 
-
-
-
-/*Quote on main page*/
-section{
-  display: block;
+#hero div {
+  max-width: 100%;
+  min-height: 100px;
   padding: 0;
   border: 0;
-  margin: 0;
-}
-
-#quote {
-  background: #000;
-  text-align: center;
-}
-
-#quote blockquote {
-  font-size: 20px;
-  line-height: 20px;
-  padding: 30px 15px 80px;
-  max-width: 650px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote {
-  border: 0;
   font: inherit;
-}
-
-#quote blockquote cite {
-  margin-top: 50px;
   display: block;
-  font-style: italic;
 }
 
-#quote blockquote cite::before {
-  content: '-';
+.desk {
+  width: 100%;
+  height: auto;
 }
 
-.clearfix::after, dl::after, footer::after, nav::after, section::after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
-
-
-
-
-/*Info About Me*/
-.biography {
-  background: #2d2c2c;
-}
-
-
-.info img {
-	display: block;
-  margin: 0 auto;
-}
-
-
-#info p {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  padding-top: 20px;
+.skill {
   display: inline-flex;
+  padding: 7px;
+  margin-top: 6px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
-p {
-  font-size: 16px;
-  line-height: 23px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  letter-spacing: 1px;
-}
+
+
 
 
 
@@ -196,10 +129,20 @@ p {
 
 /*Projects*/
 #projects {
-  background-color:lightslategray;;
+  background: radial-gradient(#525252, #131313);
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   font-family: museo-sans, Helvetica, sans-serif;
+  min-height: 80vh;
+}
+
+
+h1 {
+  align-self: center;
+  margin: auto;
+  font-size: 50px;
+  font-family: 'Bangers', cursive;
+  padding-top: 70px;
 }
 
 section {
@@ -225,7 +168,7 @@ ul {
 
 
 #projects li {
-  width: 25%;
+  width: 20%;
   float: left;
   margin: 2%;
   background: #fff;
@@ -233,8 +176,8 @@ ul {
 
 #projects a {
   border: 1px solid #000000;
-  color: lightslategray;
   display: block;
+  background:#000000;
 }
 
 a {
@@ -259,8 +202,6 @@ img {
 
 h4 {
   color: #000000;
-  font-size: 20px;
-  font-weight: 900;
   font-family: museo-sans, Helvetica, sans-serif;
   padding: 0;
   border: 0;
@@ -269,22 +210,102 @@ h4 {
   display: flex;
 }
 
-#projects p {
-  font-size: 10px;
-  margin: 0 15px 0;
+
+#projects h4 {
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-height: 8vh;
+  background:  #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+/*Quote on main page*/
+section{
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+#quote {
+  background: #000;
   text-align: center;
 }
 
-p {
-  line-height: 23px;
-  padding-bottom: 15px;
-  text-align: center;
+#quote blockquote {
+  font-size: 25px;
+  line-height: 25px;
+  padding: 30px 20px 50px;
+  max-width: 650px;
+  min-height: auto;
+  margin: 0 auto;
+  color: #fff;
 }
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  border: 0;
+  font: inherit;
+}
+
+#quote blockquote cite {
+  margin-top: 50px;
+  display: block;
+  font-style: italic;
+}
+
+#quote blockquote cite::before {
+  content: '-';
+}
+
+
+
+
 
 
 @media (max-width: 768px) {
 	body {
-		height: 15vh;
+		height: 30vh;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.grid-layout {
+        grid-template-columns: 1fr;
+      }
+}
+
+@media (max-width: 768px) {
+	#projects h4 {
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	  h1 {
+		padding-top: 5px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	#hero p {
+    padding-left: 20px;
 	}
 
 }
